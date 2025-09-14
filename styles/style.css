@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* :root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-tercearia: #22D4FD;
+    --cor--hover: #272727;
+    --cor-texto: #f6f6f6;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+} */
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #00c0fb;
+    --cor-tercearia: #ff388b;
+    --cor--hover: #0f0b0b;
+    --cor-texto: #FBFCF9;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    box-sizing: border-box;
+    color: var(--cor-texto);
+}
+
+.cabecalho {
+    padding: 3% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__links {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-tercearia);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 4% 15%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-tercearia) ;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 2rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.texto__destaque {
+    font-weight: 700;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__conteudo__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
+.apresentacao__conteudo__subtitulo__botao {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.apresentacao__links__botao {
+    box-shadow: 5px 5px var(--cor-tercearia);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 60%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.31rem 0px;
+    text-decoration: none;
+    color: var(--cor-tercearia);
+    border: 2px solid var(--cor-tercearia);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__botao:hover {
+    color: var(--cor-texto);
+    box-shadow: 10px 10px 10px var(--cor-tercearia);
+    border: 2px solid var(--cor-secundaria);
+    background-color: var(--cor--hover);
+    font-size: 2rem;
+    padding: 5%;
+    transition: 0.2s;
+}
+
+.apresentacao__imagem {
+    width: 35%;
+    padding: 14px;
+    border: 2px solid #22D4FD;
+    border-radius: 60px 0px 60px 0px;
+    transition: 0.3s;
+}
+
+.apresentacao__imagem:hover{
+    width: 40%;
+    box-shadow: 10px 10px 10px var(--cor-texto);
+    border: 2px solid var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    border-radius: 0px 60px 0px 60px;
+    transition: 0.3s;
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria); 
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family: 'Montserrat', sansserrif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 45px;
+        padding: 5%;
+    }
+    
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .apresentacao__imagem {
+        width: 60%;
+        padding: 14px;
+        border: 2px solid #22D4FD;
+        border-radius: 34px 0px 34px 0px;
+        transition: 0.3s;
+
+    .apresentacao__imagem:hover{
+        width: 70%;
+        box-shadow: 10px 10px 10px var(--cor-texto);
+        border: 2px solid var(--cor-secundaria);
+        background-color: var(--cor-primaria);
+        border-radius: 0px 34px 0px 34px;
+        transition: 0.3s;
+    }
+    
+
+    }
+}
